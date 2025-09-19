@@ -1,0 +1,10 @@
+<p>pessoa-cadastro works!</p>
+<p-listbox style="max-height: 300px;" [options]="wines" [(ngModel)]="selectedPessoa" optionLabel="wine"  class="w-full md:w-56" />
+
+
+{{selectedPessoa?.cpf}} - {{selectedPessoa?.nome}} - {{selectedPessoa?.email}}
+
+
+<div class="select_" *ngFor="let wine of wines">
+  <span [innerText]="wine['wine']"></span>
+</div>
